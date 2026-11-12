@@ -65,11 +65,6 @@ Only `Date` and `Close` are used for modelling.
 
 The LSTM model's predicted closing prices closely follow the actual prices on the validation set, with a low mean squared error.
 
-## References
-
-1. [DataFlair – Stock Price Prediction Project in Python](https://data-flair.training/blogs/stock-price-prediction-machine-learning-project-in-python/)
-2. [YouTube tutorial](https://www.youtube.com/watch?v=1O_BenficgE)
-
 ## Acknowledgement
 
-Thanks to the Machine Learning faculty for the opportunity to work on this project, and to friends and classmates for their support.
+Thanks to the Machine Learning faculty for the opportunity to work on this project and to friends and classmates for their support.
