@@ -61,10 +61,38 @@ Only `Date` and `Close` are used for modelling.
 
 4. Run all cells in order.
 
+## Web Dashboard
+
+`app.py` is a Dash web app that shows actual vs. LSTM-predicted closing prices. It reads the trained weights from `saved_model.keras` and runs the model with NumPy, so the website doesn't need TensorFlow and fits on free hosting.
+
+Files the app needs in the repo root:
+- `saved_model.keras`: the trained model, created by the notebook
+- `NSE-Tata-Global-Beverages-Limited.csv`: the stock data
+- `stock_data.csv` (optional): enables the "Other Stocks" tab
+
+Run it locally:
+
+```bash
+pip install -r requirements.txt
+python app.py
+```
+
+Then open http://localhost:8050.
+
+### Deploy on Render (free)
+1. Sign in at [render.com](https://render.com) with GitHub.
+2. Click **New → Blueprint** and select this repository. Render reads `render.yaml` and sets everything up.
+3. Click **Apply**. Your site will be live at `https://<name>.onrender.com`.
+
 ## Results
 
 The LSTM model's predicted closing prices closely follow the actual prices on the validation set, with a low mean squared error.
 
+## References
+
+1. [DataFlair – Stock Price Prediction Project in Python](https://data-flair.training/blogs/stock-price-prediction-machine-learning-project-in-python/)
+2. [YouTube tutorial](https://www.youtube.com/watch?v=1O_BenficgE)
+
 ## Acknowledgement
 
-Thanks to the Machine Learning faculty for the opportunity to work on this project and to friends and classmates for their support.
+Thanks to the Machine Learning faculty for the opportunity to work on this project, and to friends and classmates for their support.
