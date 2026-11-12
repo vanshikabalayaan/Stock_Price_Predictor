@@ -6,8 +6,8 @@ A machine learning project that predicts the closing price of a stock from its h
 
 Submitted as the Machine Learning project for the Department of Computer Science and Engineering, DTU.
 
-- **Submitted by:** Vineeta Kumari Meena (24/A07/056)
-- **Submitted to:** Mr. Gapesh Kumar
+- **Submitted by:** Vanshika (24/CSE/485)
+- **Submitted to:** Mr. Vinod Kumar
 
 ## Objective
 
